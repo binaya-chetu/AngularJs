@@ -1,0 +1,8 @@
+<div class="box categories">
+	<h2>Categories <span></span></h2>
+	<div class="box-content">
+		<ul>
+			<li data-ng-repeat="cat in categories" data-ng-class = "{'last' : $last}"><a href="#{{ cat.slug }}">{{ cat.name }}</a></li>
+		</ul>
+	</div>
+</div>

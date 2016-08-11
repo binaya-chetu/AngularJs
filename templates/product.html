@@ -1,0 +1,14 @@
+
+<div data-ng-repeat="product in products | filter: {slug: productSlug}">
+	<a href="#/product/{{ product.slug }}"><img src="http://loremflickr.com/231/383/menclothing" alt="" /></a>
+	<div>
+		<h3 style="margin-top:15px"><a href="#/product/{{ product.slug }}">{{ product.name }}</a></h3>
+		<div class="product-desc">
+			<h1 style="margin-top:15px">{{ product.gender }}</h1>
+			<p style="margin-top:15px">{{ product.description }}</p>
+			<strong class="price" style="margin-top:15px">${{ product.price }}</strong>
+			<p style="margin-top:15px">{{ product.maincat }}</p>
+			<button data-ng-click="updateCart(product)" style="margin-top:15px">Add to cart</button>
+		</div>
+	</div>
+</li>

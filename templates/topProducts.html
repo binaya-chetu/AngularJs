@@ -1,0 +1,17 @@
+<div class="products">
+	<div class="cl">&nbsp;</div>
+	<ul>
+		<li data-ng-repeat="product in products | filter: {category: 'top'}">
+			<a href="#/product/{{ product.slug }}"><img src="http://loremflickr.com/231/383/menclothing" alt="" /></a>
+			<div class="product-info">
+				<h3><a href="#/product/{{ product.slug }}" style="color:#fff">{{ product.name }}</a></h3>
+				<div class="product-desc">
+					<h4>{{ product.gender }}</h4>
+					<p>{{ product.description }}</p>
+					<strong class="price">${{ product.price }}</strong>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<div class="cl">&nbsp;</div>
+</div>

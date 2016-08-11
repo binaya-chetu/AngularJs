@@ -1,0 +1,4 @@
+<select class="field" data-ng-controller="Categories">
+	<option value="">-- Select Category --</option>
+	<option data-ng-repeat="cat in categories" value="{{ cat.slug }}">{{ cat.name }}</option>
+</select>

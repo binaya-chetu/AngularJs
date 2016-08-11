@@ -1,0 +1,6 @@
+{"categories":[
+    {"name":"Main Page", "slug":"/"},
+    {"name":"New Products", "slug":"/newproducts"},
+    {"name":"Sale Products", "slug":"saleproducts"},
+    {"name":"Top Products", "slug":"topproducts"}
+]}
